@@ -54,7 +54,7 @@ jobs:
         with:
           github-token: ${{ secrets.WORKSHOP6_GITHUB_TOKEN }}
           output-file: "false"
-
+#1
       - name: Create Release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
